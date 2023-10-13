@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>intern2growAuth-signup</title>
+</head>
+
+<body>
+    <div class="container d-flex flex-column gap-3">
+        <h1>Signup</h1>
+        <form action="/signup" method="post" autocomplete="off" enctype="application/x-www-form-urlencoded">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" required id="name" class="form-control col-12 col-sm-6">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" required id="email" class="form-control col-12 col-sm-6">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" required id="password" class="form-control col-12 col-sm-6">
+            </div>
+            <div class="form-group">
+                <label for="rePassword">Confirm Password</label>
+                <input type="password" id="rePassword" required class="form-control col-12 col-sm-6">
+            </div>
+            <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+</body>
+
+</html>

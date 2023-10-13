@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>intern2growAuth-profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-3">Profile</h1>
+        <div class="info-container mt-4">
+            <img src="profile.png" alt="Profile picture" class="img-fluid rounded-circle">
+            <div class="ml-4">
+                <p class="mb-2">Name: <%= name %></p>
+                <p>Email: <%= email %></p>
+            </div>
+        </div>
+        <form action="/logout" method="post" class="mt-3">
+            <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
+    </div>
+</body>
+
+</html>
